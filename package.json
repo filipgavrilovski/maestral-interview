@@ -1,0 +1,45 @@
+{
+  "name": "sample-e2e-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "protractor.conf.js",
+  "scripts": {
+    "postinstall": "webdriver-manager update",
+    "test": "protractor protractor.conf.js || :",
+    "posttest": "allure generate allure-results --clean -o allure-report"
+  },
+  "_moduleAliases": {
+    "@helpers": "src/helpers/helpers"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.16",
+    "@types/jasminewd2": "2.0.8",
+    "@types/node": "^8.9.4",
+    "allure-commandline": "2.13.0",
+    "blue-harvest": "0.3.1",
+    "jasmine-core": "2.99.1",
+    "jasmine-spec-reporter": "4.2.1",
+    "path": "0.12.7",
+    "protractor": "^5.4.0",
+    "ts-node": "7.0.0",
+    "tslint": "5.11.0",
+    "typescript": "3.2.4",
+    "protractor-screenshot-utils": "1.0.5"
+  },
+  "dependencies": {
+    "@types/chai": "4.2.11",
+    "@types/sprintf-js": "1.1.2",
+    "@types/superagent": "4.1.7",
+    "chai": "4.2.0",
+    "crypto": "1.0.1",
+    "jasmine-allure-reporter": "1.0.2",
+    "module-alias": "2.2.2",
+    "randomstring": "1.1.5",
+    "sprintf-js": "1.1.2",
+    "superagent": "5.2.2",
+    "tsc": "1.20150623.0",
+    "webdriver-manager": "*"
+  }
+}

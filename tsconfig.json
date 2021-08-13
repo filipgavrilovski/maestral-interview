@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "rootDirs": [
+      "./"
+    ],
+    "paths": {
+      "@helpers": [
+        "src/helpers/helpers"
+      ]
+    },
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "outDir": "../out-tsc/app",
+    "module": "commonjs",
+    "target": "es2015",
+    "types": [
+      "jasmine",
+      "jasminewd2",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
