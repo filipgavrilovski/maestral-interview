@@ -12,7 +12,7 @@ describe('Test for the nopCommerce app', () => {
         await browser.manage().window().maximize();
         handler = new pageObjectHandler();
         browser.ignoreSynchronization = true;
-        await browser.get(process.env.NOPCOMMERCE_PAGE_URL);
+        await browser.get("https://demo.nopcommerce.com/");
     });
 
     it('User searches for an item, and then adds it to cart [search bar]', async () => {

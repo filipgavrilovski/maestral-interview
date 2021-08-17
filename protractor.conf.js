@@ -7,7 +7,7 @@ const protractor = require("protractor");
 const browser = protractor.browser;
 const { SpecReporter } = require('jasmine-spec-reporter');
 
-var dConnect = false;
+var dConnect = true;
 
 // Known webdriver issue on linux where session won't start
 if(os.platform() === 'linux') dConnect=true;
